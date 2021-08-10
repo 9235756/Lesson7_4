@@ -30,7 +30,6 @@ class Triangle{
         self.sideB = sideB
     }
     
-
     func triangleAreaWithError() -> (Int?, MatError?) {
         guard sideA > 0 else {
             return (nil, .sideAerror(sideA: sideA))
@@ -56,7 +55,6 @@ class Triangle{
         
         let area = (sideA * sideB) / 2
         return .success(area)
-        
     }
 }
 
@@ -76,7 +74,6 @@ case .success(let area):
 case .failure(let error):
     print ("Вы ввели не правильное значение \(error)")
 }
-
 
 //-------------------------------------------------------------------------
 
