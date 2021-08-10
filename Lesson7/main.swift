@@ -45,7 +45,6 @@ class Triangle{
         
     }
 
-
     func triangleArea() -> Result<Int, MatError> {
         guard sideA > 0 else {
             return .failure(.sideAerror(sideA: sideA))
@@ -79,8 +78,7 @@ case .failure(let error):
 }
 
 
-//-------------------------------------
-
+//-------------------------------------------------------------------------
 
 class Triangle2{
     let sideA: Int
