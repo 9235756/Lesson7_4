@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 enum MatError: Error{
     
     case sideAerror (sideA: Int)
@@ -118,5 +117,3 @@ print("Вы ввели неверное значение: \(sideB), т.к. зн�
 } catch let error {
     print(error)
 }
-
-
